@@ -3,18 +3,17 @@ let btn = document.querySelector('.button');
 let textArea = document.querySelector('.text__btn');
 let commList = document.querySelector('.comments-list');
 
-function limitComments() {
-   if(commList.length > 12) {
-      commList.removeChild(commList.firstChild);
-    }
-  }
+
 btn.addEventListener('click', function () {
   let nameInputValue = nameInput.value;
   localStorage.setItem('input', nameInputValue);
 
   let textAreaValue = textArea.value;
   localStorage.setItem('textArea', textAreaValue);
-
+  if (nameInputValue === '' || textAreaValue === '') {
+    alert(`Помилка: Ім'я та коментар мають бути заповнені!`);
+    return; 
+  }
   let divComm = document.createElement('p');
   divComm.textContent = `${nameInputValue}: ${textAreaValue}`;
   commList.appendChild(divComm);

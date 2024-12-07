@@ -44,22 +44,3 @@ weatherBtn.addEventListener('click',function(){
     })
 })
 
-// коментари
-// let nameInput = document.querySelector('.name__input')
-// let btn = document.querySelector('.button')
-// let textArea = document.querySelector('.text__btn')
-// let commList = document.querySelector('.comments-list')
-// btn.addEventListener('click', function(){
-// let nameInputValue = nameInput.value
-// localStorage.setItem('input',nameInputValue)
-
-
-// let textAreaValue = textArea.value
-// localStorage.setItem('textArea',textAreaValue)
-// })
-// let nameText = localStorage.getItem('input')
-// let areaText = localStorage.getItem('textArea')
-// let divComm = document.createElement('div')
-// divComm.append(nameText)
-// divComm.append(areaText)
-// commList.appendChild(divComm)
